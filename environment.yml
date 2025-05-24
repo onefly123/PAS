@@ -1,0 +1,40 @@
+name: edm
+channels:
+  - pytorch
+  - nvidia
+dependencies:
+  - python>=3.8, < 3.10  # package build failures on 3.10
+  - pip
+  - numpy>=1.20
+  - click>=8.0
+  - pillow>=8.3.1
+  - scipy>=1.7.1
+  - pytorch=2.3.1
+  - psutil
+  - requests
+  - tqdm
+  - imageio
+  - pip:
+    - imageio-ffmpeg>=0.4.3
+    - pyspng
+    - omegaconf
+    - pandas
+    - openpyxl
+    - lpips
+    - einops
+    - flash-attn==0.2.8
+    - pytorch-lightning==1.4.2
+    - transformers==4.19.2
+    - torchmetrics==1.4.3
+    - albumentations==0.4.3
+    - diffusers
+    - opencv-python
+    - pudb==2019.2
+    - invisible-watermark
+    - imageio==2.9.0
+    - test-tube>=0.7.5
+    - streamlit>=0.73.1
+    - torch-fidelity==0.3.0
+    - kornia==0.6
+    - -e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers
+    - -e git+https://github.com/openai/CLIP.git@main#egg=clip
