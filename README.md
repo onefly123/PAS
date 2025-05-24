@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# PAS
-
-The code will be released within May 2025...
-=======
 # Diffusion Sampling Correction via Approximately 10 Parameters
 This repository is the official code for the paper Diffusion Sampling Correction via Approximately 10 Parameters (**ICML 2025**).
 
