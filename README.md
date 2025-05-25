@@ -4,7 +4,7 @@ This repository is the official code for the paper Diffusion Sampling Correction
 Arxiv: [https://arxiv.org/abs/2411.06503](https://arxiv.org/abs/2411.06503)
 
 # Introduction
-**PAS** (PCA-based Adaptive Search) is a method that accelerates diffusion model sampling with *minimal cost*. It uses PCA to extract a few basis vectors to span the high-dimensional sampling space, allowing the correction of the sampling direction with only a set of coordinates. Additionally, PAS leverages an adaptive search strategy to enhance sampling efficiency and reduce storage requirements. For example, PAS improves DDIM's FID on CIFAR10 from 15.69 to 4.37 in 10 NFE with just *12 parameters* and *under a minute of training* on a single A100 GPU.
+**PAS** (PCA-based Adaptive Search) is a plug-and-play training paradigm designed to accelerate sampling of diffusion models with *minimal learnable parameters and training costs*. It uses PCA to extract a few basis vectors to span the high-dimensional sampling space, allowing the correction of the sampling direction with only a set of coordinates. Additionally, PAS leverages an adaptive search strategy to enhance sampling efficiency and reduce storage requirements. For example, PAS improves DDIM's FID on CIFAR10 from 15.69 to 4.37 in 10 NFE with just *12 parameters* and *under a minute of training* on a single A100 GPU.
 ![Alt text](assets/PAS.png)
 
 # Usage
