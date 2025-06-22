@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# nohup bash -c '
 DATASET_list=("cifar10")  # "cifar10" "ffhq" "imagenet64" "lsun_bedroom" "ms_coco"
 
 GPU_INDEX=0
@@ -39,10 +40,7 @@ for loss_type in "${loss_type_list[@]}"; do
 for learning_rate in "${learning_rate_list[@]}"; do
 for NFE in "${NFE_list[@]}"; do
 
-
-if [ "$METHOD" = "euler" ] || [ "$METHOD" = "ipndm" ]; then
-    steps=$((NFE + 1))
-fi
+steps=$((NFE + 1))
 
 if [ "$DATASET" = "ms_coco" ]; then
     GUIDANCE_FLAGS="--guidance_type=cfg --guidance_rate=7.5"
@@ -125,3 +123,5 @@ done
 done
 done
 done
+
+# ' > log.out 2>&1 &
