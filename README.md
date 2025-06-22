@@ -30,7 +30,7 @@ This repo relies on the following existing codebases:
 - [EDM](https://github.com/NVlabs/edm) ([Elucidating the Design Space of Diffusion-Based Generative Models](https://arxiv.org/abs/2206.00364))
 
 # Citation
-If you use this code for your research, please consider citing the paper:
+If you find the code useful for your research, please consider citing:
 
 ```bibtex
 @inproceedings{wang2025diffusion,
