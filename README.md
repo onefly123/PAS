@@ -1,7 +1,9 @@
-# Diffusion Sampling Correction via Approximately 10 Parameters
-This repository is the official code for the paper Diffusion Sampling Correction via Approximately 10 Parameters (**ICML 2025**).
+# Diffusion Sampling Correction via Approximately 10 Parameters<br><sub>Official PyTorch implementation of the [ICML 2025](https://openreview.net/forum?id=yPhAbeQxbJ) paper</sub>
 
-Arxiv: [https://arxiv.org/abs/2411.06503](https://arxiv.org/abs/2411.06503)
+🔗 **Links**  
+- 📄 **ArXiv**: [arxiv.org/abs/2411.06503](https://arxiv.org/abs/2411.06503)  
+- 📝 **OpenReview**: [openreview.net/forum?id=yPhAbeQxbJ](https://openreview.net/forum?id=yPhAbeQxbJ)  
+- 📧 **Contact**: [wangguangyi@stu.xmu.edu.cn](mailto:wangguangyi@stu.xmu.edu.cn)
 
 # Introduction
 **PAS** (PCA-based Adaptive Search) is a plug-and-play training paradigm designed to accelerate sampling of diffusion models with *minimal learnable parameters and training costs*. It uses PCA to extract a few basis vectors to span the high-dimensional sampling space, allowing the correction of the sampling direction with only a set of coordinates. Additionally, PAS leverages an adaptive search strategy to enhance sampling efficiency and reduce storage requirements. For example, PAS improves DDIM's FID on CIFAR10 from 15.69 to 4.37 in 10 NFE with just *12 parameters* and *under a minute of training* on a single A100 GPU.
@@ -31,9 +33,10 @@ This repo relies on the following existing codebases:
 If you use this code for your research, please consider citing the paper:
 
 ```bibtex
-@article{wang2024diffusion,
+@inproceedings{wang2025diffusion,
   title={Diffusion Sampling Correction via Approximately 10 Parameters},
-  author={Wang, Guangyi and Peng, Wei and Li, Lijiang and Chen, Wenyu and Cai, Yuren and Su, Songzhi},
-  journal={arXiv preprint arXiv:2411.06503},
-  year={2024}
+  author={Guangyi Wang and Wei Peng and lijiang Li and Wenyu Chen and Yuren Cai and Song-Zhi Su},
+  booktitle={Forty-second International Conference on Machine Learning},
+  year={2025},
+  url={https://openreview.net/forum?id=yPhAbeQxbJ}
 }
