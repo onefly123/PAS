@@ -1,9 +1,11 @@
 # Diffusion Sampling Correction via Approximately 10 Parameters<br><sub>Official PyTorch implementation of the [ICML 2025](https://openreview.net/forum?id=yPhAbeQxbJ) paper</sub>
 
 🔗 **Links**  
-- 📄 **ArXiv**: [arxiv.org/abs/2411.06503](https://arxiv.org/abs/2411.06503)  
+- 📄 **ArXiv**: [arxiv.org/abs/2411.06503](https://arxiv.org/abs/2411.06503)
 - 📝 **OpenReview**: [openreview.net/forum?id=yPhAbeQxbJ](https://openreview.net/forum?id=yPhAbeQxbJ)  
-- 📧 **Contact**: [wangguangyi@stu.xmu.edu.cn](mailto:wangguangyi@stu.xmu.edu.cn)
+- 🖼️ **Poster**: [View Poster (PNG)](https://icml.cc/media/PosterPDFs/ICML%202025/43536.png?t=1751208228.1299384)
+
+📧 **Contact**: [wangguangyi@stu.xmu.edu.cn](mailto:wangguangyi@stu.xmu.edu.cn)
 
 # Introduction
 **PAS** (PCA-based Adaptive Search) is a plug-and-play training paradigm designed to accelerate sampling of diffusion models with *minimal learnable parameters and training costs*. It uses PCA to extract a few basis vectors to span the high-dimensional sampling space, allowing the correction of the sampling direction with only a set of coordinates. Additionally, PAS leverages an adaptive search strategy to enhance sampling efficiency and reduce storage requirements. For example, PAS improves DDIM's FID on CIFAR10 from 15.69 to 4.37 in 10 NFE with just *12 parameters* and *under a minute of training* on a single A100 GPU.
